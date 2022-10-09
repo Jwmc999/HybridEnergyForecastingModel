@@ -73,10 +73,10 @@ def get_model(name, units, input_width, label_width, n_features, dropout):
   model.compile(loss='mse', optimizer=opt)
   return model
 
-## MLP: Simple Linear Regression
+## MLP: Multilayer Perceptron
 class linLayer(tf.keras.layers.Layer):
   """
-  Simple Linear Regression layers
+  Simple Dense layers
   
   We will use it as single-step
 
